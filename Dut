@@ -1,0 +1,8 @@
+module dut #(parameter N = 4, range = 2)(
+ input [N-1:0] I,
+ input [range - 1:0] sel,
+ output wire y
+ );
+ 
+ assign y = I[sel];
+endmodule
