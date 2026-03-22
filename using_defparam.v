@@ -9,12 +9,12 @@ endmodule
 /*
 `timescale 1ns / 1ps
 module tb( );
- reg [4:0] in;
+ reg [4:0] in;  // mentioning the size of the inputs and outputs based on the overridden value
  wire [31:0] y;
  
  dut Z(.in(in), .y(y));
  
- defparam Z.N = 5 ;
+ defparam Z.N = 5 ; 
  defparam Z.M = 32;
  
  initial begin
